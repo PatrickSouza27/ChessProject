@@ -2,11 +2,7 @@
 {
     enum Cor : int
     {
-        Branca,
-        Preta,
-        Amarela,
-        Vermelha,
-        Laranja
-          
+        White,
+        Black    
     }
 }

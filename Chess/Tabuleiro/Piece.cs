@@ -7,13 +7,13 @@
         public int QtdMovimentos { get; protected set; }
         public BoardGaming Tabuleiro { get; protected set; }
 
-        public Piece(Position positionPiece, Cor color, BoardGaming tabuleiro)
+        public Piece(BoardGaming tabuleiro, Cor color)
         {
-            PositionPiece = positionPiece;
+            PositionPiece = null;
             Color = color;
             Tabuleiro = tabuleiro;
             QtdMovimentos = 0;
         }
-        
+         
     }
 }
