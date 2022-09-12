@@ -8,14 +8,16 @@ namespace Chess
     {
         static void Main()
         {
-            BoardGaming tabuleiro = new BoardGaming(8, 8);
-            tabuleiro.PiecePut(new Tower(tabuleiro, Cor.Black), new Position(0, 0));
-            tabuleiro.PiecePut(new Tower(tabuleiro, Cor.Black), new Position(1, 3));
-            tabuleiro.PiecePut(new King(tabuleiro, Cor.Black), new Position(2, 4));
+            try
+            {
+                MatchChess matchChess = new MatchChess();
+                Tela.PrintBoardGaming(matchChess.Board);
 
-            Tela.PrintBoardGaming(tabuleiro);
-          
-
+            }catch(BadImageFormatException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            
         }
     }
 }

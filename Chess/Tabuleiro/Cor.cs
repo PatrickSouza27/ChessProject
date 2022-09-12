@@ -3,6 +3,6 @@
     enum Cor : int
     {
         White,
-        Black    
+        Red    
     }
 }
